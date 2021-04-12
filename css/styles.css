@@ -4,6 +4,10 @@
     padding: 0;
     text-align: center;
 }
+a{
+    text-decoration: none;
+    color: #4A4A4A;
+}
 .content {
     display: flex;
     flex-direction: column;
@@ -13,8 +17,6 @@
     background-color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
     color: #4A4A4A;
-    border: 1px solid red;
-    /* align-items: center; */
 }
 p, h1, h2, h3{
     margin: 25px 10px;
@@ -52,4 +54,96 @@ footer {
     justify-content: space-between;
     font-weight: 900;
     border-style: 5px solid black;
+}
+footer nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .content {
+        width: 768px;
+    }
+    
+    nav li {
+        display: inline;
+    }
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about p {
+        margin-top: 0;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .portfolio-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-item {
+        
+        width:360px
+    }
+    .contact-info p {
+        padding: 0 100px;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+    }
+    footer #backtotop {
+        display: none;
+    }
+    footer nav {
+        display: inline;
+    }
+    footer p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .content {
+        width: 1024px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav{
+        margin: 25px;
+    }
+    nav li {
+        display: inline;
+    }
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about p {
+        margin-top: 0;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .portfolio-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-item {
+        
+        width:330px
+    }
+    .contact-info p {
+        padding: 0 100px;
+    }
+    footer #backtotop {
+        display: none;
+    }
+    footer nav {
+        display: inline;
+    }
+
 }
